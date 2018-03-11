@@ -25,10 +25,17 @@ namespace integratieDemoConsole
           double change = alertItem.populariteit / alertItem.populariteitOud;
           if (change >= relatieveVerandering)
           {
+             notifyUser(alertItem, alertUser,change);
              return true;
           }
 
           return false;
+       }
+
+       private Boolean notifyUser(Item item, User user, Double change)
+       {
+          Console.Write("Geachte user " + user.getNaam() + ", uw alert op " + item.naam + " is afgegaan: het item is met " + change + " veranderd." );
+         return true;
        }
     }
 }
