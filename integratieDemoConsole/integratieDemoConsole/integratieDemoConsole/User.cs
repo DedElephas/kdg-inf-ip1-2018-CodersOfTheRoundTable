@@ -9,7 +9,6 @@ namespace integratieDemoConsole
     {
        private Domain.Registratie registratie;
        public int registratieId;
-       private Alert userAlert;
 
        public User(int registratieId)
        {
@@ -23,12 +22,10 @@ namespace integratieDemoConsole
             this.registratie = new Registratie();
             registratie.Username = userName;
             this.registratieId = registratieId;
-
         }
 
         public String getNaam()
         {
-
             return this.registratie.Username;
         }
    }
