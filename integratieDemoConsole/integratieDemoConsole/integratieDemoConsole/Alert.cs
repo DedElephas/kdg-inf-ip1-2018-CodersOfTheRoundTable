@@ -28,8 +28,27 @@ namespace integratieDemoConsole
                 alertItem = VARIABLE;
              }
           }
-          Console.Write(alertItem.naam);
-         User alertUser = null;
+          Console.WriteLine("// alert haalt item op: " + alertItem.naam);
+         
+
+
+         double change = (double)alertItem.vermelding / (double)alertItem.vermeldingOud;
+
+ 
+
+         if (change >= relatieveVerandering)
+          {
+             Console.WriteLine( "// checkt of de alert triggert => het is groter");
+             notifyUser(alertItem,users,change);
+             return true;
+          }
+
+          return false;
+       }
+
+       private Boolean notifyUser(Item item,User[] users, Double change)
+       {
+          User alertUser = null;
           foreach (var VARIABLE in users)
           {
              if (VARIABLE.registratieId == userId)
@@ -37,23 +56,8 @@ namespace integratieDemoConsole
                 alertUser = VARIABLE;
              }
           }
-          Console.Write(alertUser.getNaam());
-
-
-         double change = alertItem.populariteit / alertItem.populariteitOud;
-          if (change >= relatieveVerandering)
-          {
-             Console.Write("groter");
-             notifyUser(alertItem, alertUser,change);
-             return true;
-          }
-
-          return false;
-       }
-
-       private Boolean notifyUser(Item item, User user, Double change)
-       {
-          Console.Write("Geachte user " + user.getNaam() + ", uw alert op " + item.naam + " is afgegaan: het item is met " + change + " veranderd." );
+          Console.WriteLine("// alert haalt user op als het triggert: " + alertUser.getNaam());
+         Console.WriteLine("Geachte user " + alertUser.getNaam() + ", uw alert op " + item.naam + " is afgegaan: het item is met " + (change-1)*100 + "% veranderd." );
          return true;
        }
     }

@@ -28,9 +28,9 @@ namespace integratieDemoConsole
          populariteit += populariteitNew;
          vermeldingOud += vermelding;
          vermelding += vermeldingNew;
-         Console.WriteLine("item ge-update");
+         Console.WriteLine("// item ge-update");
 
-         return false;
+         return true;
        }
     }
 }
