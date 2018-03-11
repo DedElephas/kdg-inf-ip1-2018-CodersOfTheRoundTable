@@ -15,7 +15,8 @@ namespace integratieDemoConsole
            var SimonSomville = new User(1);
          //3. MakeAlert
            var userAlert = new Alert(1, 1, 0.75);
-           //4. UpdateItem
+            //4. UpdateItem
+            BDW.populariteit = 0.8;
            //5. CheckAlert
            //5.1 Trigger Alert
            //6. AlertNotifiesUser
