@@ -13,7 +13,7 @@ namespace Domain
         protected String Password { get; set; }
         public Boolean Verified { get; set; }
         public int Role { get; set; }
-        public String name { get; set; }
+        public String Username { get; set; }
 
     }
 }
