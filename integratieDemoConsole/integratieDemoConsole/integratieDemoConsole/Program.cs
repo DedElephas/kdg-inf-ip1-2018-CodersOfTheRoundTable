@@ -1,5 +1,7 @@
 ﻿using System;
 
+
+
 namespace integratieDemoConsole
 {
     class Program
@@ -8,12 +10,15 @@ namespace integratieDemoConsole
         {
             Console.WriteLine("Demo Alerttriggering!");
            //1. MakeItem
-           //2. MakeUser
-           //3. MakeAlert
-           //4. UpdateItem
-           //5. CheckAlert
-           //5.1 Trigger Alert
-           //6. AlertNotifiesUser
-        }
+           var BDW = new Item();
+         //2. MakeUser
+           var SimonSomville = new User();
+         //3. MakeAlert
+
+         //4. UpdateItem
+         //5. CheckAlert
+         //5.1 Trigger Alert
+         //6. AlertNotifiesUser
+      }
     }
 }
