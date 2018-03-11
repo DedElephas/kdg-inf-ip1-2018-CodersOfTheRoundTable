@@ -20,9 +20,9 @@ namespace integratieDemoConsole
 
        public Boolean checkAlert(Item[] items, User[] users)
        {
-          wh
-
-          return false;
+         var alertItem = Array.Find(items, item => item.itemId == this.itemId);
+          var fooItem = Array.Find(users, user => user. == "bar");
+         return false;
        }
     }
 }

@@ -8,7 +8,7 @@ namespace integratieDemoConsole
     class User
     {
        private Domain.Registratie registratie;
-       private int registratieId;
+       public int registratieId;
        private Alert userAlert;
 
        public User(int registratieId)
