@@ -15,7 +15,7 @@ namespace integratieDemoConsole
            Item[] items = new Item[5];
            items[0] = BDW;
             //2. MakeUser
-            var SimonSomville = new User(1);
+            var SimonSomville = new User(1, "Simon Somville");
            User[] users = new User[5];
            users[0] = SimonSomville;
          //3. MakeAlert
