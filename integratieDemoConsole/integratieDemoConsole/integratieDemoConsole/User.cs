@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Domain;
 
 namespace integratieDemoConsole
 {
     class User
     {
-       public int userId { get; set; }
+        private Domain.Registratie registratie ;
+        private int registratieId;
 
-       public User()
-       {
-       }
+        public User(int registratieId)
+        {
+            this.registratie = new Registratie();
+            this.registratieId = registratieId;
+        }
     }
 }
