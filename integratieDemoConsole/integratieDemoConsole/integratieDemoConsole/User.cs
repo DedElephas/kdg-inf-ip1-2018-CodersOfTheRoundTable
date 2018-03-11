@@ -6,5 +6,6 @@ namespace integratieDemoConsole
 {
     class User
     {
-    }
+       public int userId { get; set; }
+   }
 }
