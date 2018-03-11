@@ -12,7 +12,7 @@ namespace integratieDemoConsole
       public double populariteit { get; set; }
       public int vermelding { get; set; }
 
-       public Item(int itemId, string naam, int populariteit, int vermelding)
+       public Item(int itemId, string naam, double populariteit, int vermelding)
        {
           this.itemId = itemId;
           this.naam = naam;

@@ -14,11 +14,11 @@ namespace integratieDemoConsole
          //2. MakeUser
            var SimonSomville = new User(1);
          //3. MakeAlert
-           var userAlert = new Alert();
-         //4. UpdateItem
-         //5. CheckAlert
-         //5.1 Trigger Alert
-         //6. AlertNotifiesUser
-      }
+           var userAlert = new Alert(1, 1, 0.75);
+           //4. UpdateItem
+           //5. CheckAlert
+           //5.1 Trigger Alert
+           //6. AlertNotifiesUser
+        }
     }
 }

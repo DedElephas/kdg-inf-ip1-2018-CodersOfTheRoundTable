@@ -8,10 +8,10 @@ namespace integratieDemoConsole
     {
        public int itemId { get; set; }
        public int userId { get; set; }
-       public int relatieveVerandering { get; set; }
+       public double relatieveVerandering { get; set; }
        public int absoluteVerandering { get; set; }
 
-       public Alert(int itemId, int userId, int relatieveVerandering)
+       public Alert(int itemId, int userId, double relatieveVerandering)
        {
           this.itemId = itemId;
           this.userId = userId;
