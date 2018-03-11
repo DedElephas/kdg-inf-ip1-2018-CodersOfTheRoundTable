@@ -7,6 +7,7 @@ namespace Domain
     public class Registratie
     {
         public DateTime RegistrationDate { get; set; }
+        
         public int RegistrationId { get; set; }
         public int UserId { get; set; }
         protected String UserEmail { get; set; }
