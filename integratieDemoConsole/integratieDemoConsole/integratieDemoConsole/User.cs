@@ -10,9 +10,9 @@ namespace integratieDemoConsole
         private Domain.Registratie registratie ;
         private int registratieId;
 
-        public User(Registratie registratie, int registratieId)
+        public User(int registratieId)
         {
-            this.registratie = registratie;
+            this.registratie = new Registratie();
             this.registratieId = registratieId;
         }
     }
