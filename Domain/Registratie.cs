@@ -15,6 +15,5 @@ namespace Domain
         public Boolean Verified { get; set; }
         public int Role { get; set; }
         public String Username { get; set; }
-
     }
 }

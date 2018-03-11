@@ -17,5 +17,19 @@ namespace integratieDemoConsole
           this.registratieId = registratieId;
 
        }
+
+        public User(int registratieId, String userName)
+        {
+            this.registratie = new Registratie();
+            registratie.Username = userName;
+            this.registratieId = registratieId;
+
+        }
+
+        public String getNaam()
+        {
+
+            return this.registratie.Username;
+        }
    }
 }
