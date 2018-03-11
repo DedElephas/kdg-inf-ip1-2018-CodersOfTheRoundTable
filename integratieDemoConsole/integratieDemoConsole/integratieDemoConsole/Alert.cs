@@ -10,5 +10,21 @@ namespace integratieDemoConsole
        public int userId { get; set; }
        public int relatieveVerandering { get; set; }
        public int absoluteVerandering { get; set; }
-   }
+
+       public Alert(int itemId, int userId, int relatieveVerandering)
+       {
+          this.itemId = itemId;
+          this.userId = userId;
+          this.relatieveVerandering = relatieveVerandering;
+       }
+
+       
+
+       public Boolean checkAlert()
+       {
+
+
+          return false;
+       }
+    }
 }

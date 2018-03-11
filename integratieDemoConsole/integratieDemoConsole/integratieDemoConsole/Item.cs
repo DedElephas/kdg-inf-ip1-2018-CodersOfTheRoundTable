@@ -11,5 +11,11 @@ namespace integratieDemoConsole
       public String naam { get; set; }
       public int populariteit { get; set; }
       public int vermelding { get; set; }
-   }
+
+       public Boolean update(Item oudItem)
+       {
+         
+          return false;
+       }
+    }
 }
