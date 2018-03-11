@@ -16,7 +16,9 @@ namespace integratieDemoConsole
          //3. MakeAlert
            var userAlert = new Alert(1, 1, 0.75);
             //4. UpdateItem
-            BDW.populariteit = 0.8;
+            Console.Write("Hoeveel punten is " + BDW.naam + " gestegen in populariteit? aantal:");
+            double stijging = Convert.ToDouble(Console.ReadLine());
+            BDW.populariteit = stijging;
            //5. CheckAlert
            //5.1 Trigger Alert
            //6. AlertNotifiesUser
