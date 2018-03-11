@@ -18,8 +18,6 @@ namespace integratieDemoConsole
           this.relatieveVerandering = relatieveVerandering;
        }
 
-       
-
        public Boolean checkAlert()
        {
 

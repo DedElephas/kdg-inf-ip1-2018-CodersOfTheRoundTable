@@ -10,9 +10,9 @@ namespace integratieDemoConsole
         {
             Console.WriteLine("Demo Alerttriggering!");
            //1. MakeItem
-           var BDW = new Item();
+           var BDW = new Item(1,"Bart De Wever",0.5,100);
          //2. MakeUser
-           var SimonSomville = new User();
+           var SimonSomville = new User(1);
          //3. MakeAlert
            var userAlert = new Alert();
          //4. UpdateItem
