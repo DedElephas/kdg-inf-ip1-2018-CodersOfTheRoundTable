@@ -9,10 +9,9 @@ namespace Domain
         public int ItemID { get; set; }
         public int ItemType { get; set; }
         public String Name { get; set; }
-        public int Populariteit { get; set; }
+        public double Populariteit { get; set; }
         public int Vermelding { get; set; }
         public DateTime LatestRefresh { get; set; }
-
         private Item item { get; set; }
 
 
