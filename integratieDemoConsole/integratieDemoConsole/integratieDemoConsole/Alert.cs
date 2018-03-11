@@ -20,9 +20,15 @@ namespace integratieDemoConsole
 
        public Boolean checkAlert(Item[] items, User[] users)
        {
-         var alertItem = Array.Find(items, item => item.itemId == this.itemId);
-          var fooItem = Array.Find(users, user => user. == "bar");
-         return false;
+         var alertItem = Array.Find(items, item => item.itemId == itemId);
+          var alertUser = Array.Find(users, user => user.registratieId == userId);
+          double change = alertItem.populariteit / alertItem.populariteitOud;
+          if (change >= relatieveVerandering)
+          {
+             return true;
+          }
+
+          return false;
        }
     }
 }
