@@ -22,7 +22,7 @@ namespace integratieDemoConsole
           this.vermelding = vermelding;
        }
 
-       public Boolean update(double populariteitNew, int vermeldingNew)
+       public Boolean Update(double populariteitNew, int vermeldingNew)
        {
          populariteitOud += populariteit;
          populariteit += populariteitNew;

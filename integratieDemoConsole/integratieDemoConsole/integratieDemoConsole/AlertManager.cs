@@ -4,15 +4,15 @@ using System.Text;
 
 namespace integratieDemoConsole
 {
-    class AlertRepository
+    class AlertManager
     {
         private List<Alert> alertList;
 
-        public AlertRepository()
+        public AlertManager()
         {
             alertList = new List<Alert>();
         }
-        public AlertRepository(List<Alert> alertList)
+        public AlertManager(List<Alert> alertList)
         {
             alertList = new List<Alert>();
             this.alertList = alertList;

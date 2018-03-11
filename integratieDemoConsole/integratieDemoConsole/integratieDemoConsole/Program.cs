@@ -11,34 +11,34 @@ namespace integratieDemoConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Demo Alerttriggering!");
-            AlertRepository alertRepo = new AlertRepository();
-            UserRepository userRepo = new UserRepository();
+            AlertManager alertManager = new AlertManager();
+            UserManager userManager = new UserManager();
+            ItemManager itemManager = new ItemManager();
 
             //1. MakeItem
             Console.WriteLine("// items, user & alert worden aangemaakt");
-            var BDW = new Item(1, "Bart De Wever", 0.5, 100);
-            Console.WriteLine(BDW.naam + " zijn populariteit is " + BDW.populariteit + " en zijn vermeldingen zijn: " + BDW.vermelding);
-            Item[] items = new Item[1];
-            items[0] = BDW;
+            itemManager.AddItem("Bart De Wever", 0.5, 100);
+            itemManager.AddItem("Bart De Pauw", 0.5, 100);
+            Console.WriteLine(itemManager.GetItem(0).naam + " zijn populariteit is " + itemManager.GetItem(0).populariteit + " en zijn vermeldingen zijn: " + itemManager.GetItem(0).vermelding);
 
 
             //2. MakeUser
-            userRepo.AddUser("Simon Somville");
-            userRepo.AddUser("Seppe Maes");
+            userManager.AddUser("Simon Somville");
+            userManager.AddUser("Seppe Maes");
 
 
             //3. MakeAlert
-            alertRepo.AddAlert(new Alert(1, userRepo.GetUser(0), 0.75, AlertType.androidNotificatie));
-            alertRepo.AddAlert(new Alert(1, userRepo.GetUser(1), 0.25));
+            alertManager.AddAlert(new Alert(1, userManager.GetUser(0), 0.75, AlertType.androidNotificatie));
+            alertManager.AddAlert(new Alert(0, userManager.GetUser(1), 0.25));
 
 
             //4. UpdateItem
-            BDW.update(-0.15, 150);
+            itemManager.UpdateItems();
 
 
             //5. CheckAlert
             //5.1 Trigger Alert
-            alertRepo.checkAlerts(items, userRepo.GetUsers());
+            alertManager.checkAlerts(itemManager.GetItems(), userManager.GetUsers());
 
 
             //6. AlertNotifiesUser

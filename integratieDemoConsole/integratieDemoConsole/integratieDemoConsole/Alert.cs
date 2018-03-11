@@ -32,11 +32,11 @@ namespace integratieDemoConsole
         public Boolean checkAlert(Item[] items, User[] users)
         {
             Item alertItem = null;
-            foreach (var VARIABLE in items)
+            foreach (var item in items)
             {
-                if (VARIABLE.itemId == itemId)
+                if (item.itemId == itemId)
                 {
-                    alertItem = VARIABLE;
+                    alertItem = item;
                 }
             }
             Console.WriteLine("// alert haalt item op: " + alertItem.naam);

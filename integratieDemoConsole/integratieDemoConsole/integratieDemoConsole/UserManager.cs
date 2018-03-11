@@ -4,17 +4,17 @@ using System.Text;
 
 namespace integratieDemoConsole
 {
-    class UserRepository
+    class UserManager
     {
         private List<User> userList;
         private int userCounter;
 
-        public UserRepository()
+        public UserManager()
         {
             userCounter = 0;
             userList = new List<User>();
         }
-        public UserRepository(List<User> userList)
+        public UserManager(List<User> userList)
         {
             userList = new List<User>();
             this.userList = userList;
@@ -24,6 +24,12 @@ namespace integratieDemoConsole
         public void AddUser(String userName)
         {
             userList.Add(new User(userCounter++, userName));
+        }
+        public void AddItem(User user)
+        {
+            // Gebruik deze niet om fouten met usercounter te voorkomen
+            userList.Add(user);
+            userCounter++;
         }
 
         public User[] GetUsers()
