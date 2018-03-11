@@ -29,6 +29,7 @@ namespace integratieDemoConsole
          vermeldingOud += vermelding;
          vermelding += vermeldingNew;
          Console.WriteLine("item ge-update");
+
          return false;
        }
     }
