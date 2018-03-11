@@ -18,9 +18,9 @@ namespace integratieDemoConsole
           this.relatieveVerandering = relatieveVerandering;
        }
 
-       public Boolean checkAlert()
+       public Boolean checkAlert(Item[] items, User[] users)
        {
-
+          wh
 
           return false;
        }
