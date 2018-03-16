@@ -18,9 +18,11 @@ namespace integratieDemoConsole
 
             //1. MakeItem
             Console.WriteLine("// items, user & alert worden aangemaakt");
+            Console.ReadLine();
             itemManager.AddItem("Bart De Wever", 0.5, 100);
-            itemManager.AddItem("Bart De Pauw", 0.5, 100);
+            itemManager.AddItem("Hans Maes", 0.5, 100);
             Console.WriteLine(itemManager.GetItem(0).naam + " zijn populariteit is " + itemManager.GetItem(0).populariteit + " en zijn vermeldingen zijn: " + itemManager.GetItem(0).vermelding);
+            Console.ReadLine();
 
 
             //2. MakeUser
