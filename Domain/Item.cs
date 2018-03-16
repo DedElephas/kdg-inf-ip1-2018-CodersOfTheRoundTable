@@ -6,31 +6,32 @@ namespace Domain
 {
     public class Item
     {
-      public int itemId { get; set; }
-      public int type { get; set; }
-      public String naam { get; set; }
-      public double populariteitOud { get; set; }
-      public double populariteit { get; set; }
-      public int vermeldingOud { get; set; }
-      public int vermelding { get; set; }
+        public int itemId { get; set; }
+        public int type { get; set; }
+        public String naam { get; set; }
+        public double populariteitOud { get; set; }
+        public double populariteit { get; set; }
+        public int vermeldingOud { get; set; }
+        public int vermelding { get; set; }
 
-      public Item(int itemId, string naam, double populariteit, int vermelding)
-       {
-          this.itemId = itemId;
-          this.naam = naam;
-          this.populariteit = populariteit;
-          this.vermelding = vermelding;
-       }
+        public Item(int itemId, string naam, double populariteit, int vermelding)
+        {
+            this.itemId = itemId;
+            this.naam = naam;
+            this.populariteit = populariteit;
+            this.vermelding = vermelding;
+        }
 
-       public Boolean Update(double populariteitNew, int vermeldingNew)
-       {
-         populariteitOud += populariteit;
-         populariteit += populariteitNew;
-         vermeldingOud += vermelding;
-         vermelding += vermeldingNew;
-         Console.WriteLine("// item ge-update");
+        public Boolean Update(double populariteitNew, int vermeldingNew)
+        {
+            populariteitOud += populariteit;
+            populariteit += populariteitNew;
+            vermeldingOud += vermelding;
+            vermelding += vermeldingNew;
+            Console.WriteLine("// item ge-update");
+            Console.ReadLine(); // TODO Domain Classes can not output data
 
-         return true;
-       }
+            return true;
+        }
     }
 }

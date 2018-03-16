@@ -40,6 +40,7 @@ namespace Domain
                 }
             }
             Console.WriteLine("// alert haalt item op: " + alertItem.naam);
+            Console.ReadLine(); // TODO Domain Classes can not output data
 
 
 
@@ -50,6 +51,7 @@ namespace Domain
             if (change >= relatieveVerandering)
             {
                 Console.WriteLine("// checkt of de alert triggert => het is groter");
+                Console.ReadLine(); // TODO Domain Classes can not output data
                 notifyUser(alertItem, users, change);
                 return true;
             }
@@ -79,10 +81,15 @@ namespace Domain
                 case AlertType.email:
                     Console.WriteLine("//De user wil een email");
                     break;
-            }
+                default:
+                    Console.ReadLine(); // TODO Domain Classes can not output data
+                    break;
+            } 
 
             Console.WriteLine("// alert haalt user op als het triggert: " + alertUser.getNaam());
+            Console.ReadLine(); // TODO Domain Classes can not output data
             Console.WriteLine("Geachte user " + alertUser.getNaam() + ", uw alert op " + item.naam + " is afgegaan: het item is met " + (change - 1) * 100 + "% veranderd. (Dit bericht wordt verstuurd via " + this.alertType.ToString());
+            Console.ReadLine(); // TODO Domain Classes can not output data
             return true;
         }
 
