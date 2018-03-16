@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Domain;
 
-namespace integratieDemoConsole
+namespace Domain
 {
-    class User
+    public class User
     {
        private Domain.Registratie registratie;
        public int registratieId;
