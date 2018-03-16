@@ -88,7 +88,7 @@ namespace Domain
 
             Console.WriteLine("// alert haalt user op als het triggert: " + alertUser.getNaam());
             Console.ReadLine(); // TODO Domain Classes can not output data
-            Console.WriteLine("Geachte user " + alertUser.getNaam() + ", uw alert op " + item.naam + " is afgegaan: het item is met " + (change - 1) * 100 + "% veranderd. (Dit bericht wordt verstuurd via " + this.alertType.ToString());
+            Console.WriteLine("Geachte user " + alertUser.getNaam() + ", uw alert op " + item.naam + " is afgegaan: het item is met " + (change - 1) * 100 + "% veranderd. (Dit bericht wordt verstuurd via " + this.alertType.ToString() + ")");
             Console.ReadLine(); // TODO Domain Classes can not output data
             return true;
         }
