@@ -22,6 +22,8 @@ namespace integratieDemoConsole
             itemManager.AddItem("Bart De Wever", 0.5, 100);
             itemManager.AddItem("Hans Maes", 0.5, 100);
             Console.WriteLine(itemManager.GetItem(0).naam + " zijn populariteit is " + itemManager.GetItem(0).populariteit + " en zijn vermeldingen zijn: " + itemManager.GetItem(0).vermelding);
+            Console.WriteLine(itemManager.GetItem(1).naam + " zijn populariteit is " + itemManager.GetItem(1).populariteit + " en zijn vermeldingen zijn: " + itemManager.GetItem(1).vermelding);
+
             Console.ReadLine();
 
 
