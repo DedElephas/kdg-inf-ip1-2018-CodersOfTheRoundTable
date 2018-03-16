@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Domain;
 
 namespace integratieDemoConsole
 {
-    class ItemManager
+    public class ItemManager
     {
         private List<Item> itemList;
         private int itemCounter;
